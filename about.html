@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BootStrap for CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,43 +11,54 @@
       crossorigin="anonymous"
     />
     <title>Bootstrap Practice</title>
-</head>
-<body>
-    <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-        <li class="nav-item"> 
-          <a class="nav-link" href="holidays.html">Holidays</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="favorites.html">Favorites</a>
-        </li>
+  </head>
+  <body>
+    <!-- Nav the displays pills for active page, fills the whole line and links to all pages. -->
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="about.html"
+          >About</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="holidays.html">Holidays</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="favorites.html">Favorites</a>
+      </li>
     </ul>
 
-    <div>
-        <h1>Jennifer Tarleton</h1>
-        <img src="img/headshot.png">
-        <p>This is some information about myself...</p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="my-5 display-1 text-primary text-center">Jennifer Tarleton</h1>
+          <!-- Professional headshot made in Canva...Used float and img-fluid to wrap text around img and setting margin start-->
+          <img  src="img/headshot.png" class="float-md-start img-fluid ms-3"> 
+          <p class="p-5">
+            I am currently a student at CodeX Academy, where I am studying web
+            development with the goal of becoming a software engineer in the future.
+            I am also very interested about Data Analysis. Data is everywhere and growing 
+            and can be used to make decisions, prepare for the future, solve problems and will be here forever. 
+            So, I want to incorporate what I am currently learning in Web Development to apply to Data Analysis in some way
+            in my future job. My next learning journey would have to be to back-end web development. 
+
+          </p>
+        </div>
+      </div>
     </div>
 
-    
-    
-    
-
-
-
-    
-    <footer class="footer text-center">
-        Created at CodeX &copy;
-      </footer>
+    <footer class="footer text-center">Created at CodeX &copy;</footer>
+    <!-- BootStrap for JS -->
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-</body>
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
